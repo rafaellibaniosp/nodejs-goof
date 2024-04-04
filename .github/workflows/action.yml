@@ -1,4 +1,4 @@
-name: ZAP Baseline Scan
+name: Nuclei
 
 on: push
 
@@ -6,7 +6,7 @@ jobs:
   zap:
     runs-on: ubuntu-latest
     steps:
-      - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.12.0
+      - name: Nuclei - Vulnerability Scan
+        uses: projectdiscovery/nuclei-action@main
         with:
           target: 'https://juice-shop.herokuapp.com/'
