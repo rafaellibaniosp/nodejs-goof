@@ -1,4 +1,5 @@
-jobs:
+name: DevSecOps-GitLeaks
+on: workflow_dispatchjobs:
   scan:
     name: gitleaks
     runs-on: ubuntu-latest
